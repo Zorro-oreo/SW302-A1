@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Document</title>
+        <title>Home</title>
     </head>
     <body>
         <input type="checkbox" id="theme-toggle" class="theme-toggle">
@@ -12,7 +12,7 @@
             <header class="header">
                 <p class="name">Campus Events Guide</p>
                 <nav class="nav">
-                    <a href="">Home</a>
+                    <a href="index.html" aria-current="page">Home</a>
                     <a href="events.html">Events</a>
                     <a href="registration.html">Registration</a>
                     <a href="schedule.html">Schedule</a>
@@ -22,7 +22,7 @@
             </header>
             <main>
                 <section class="hero">
-                    <img src="/assets/campus1.jpg" alt="students on campus">
+                    <img src="assets/campus1.jpg" alt="students on campus">
                     <div class="hero-cont">
                         <h1>Never miss a campus event again</h1>
                         <p>
@@ -31,56 +31,58 @@
                     </div>
                 </section>
                 <section id="mainE">
-                    <h1>Featured Events</h1>
+                    <h2>Featured Events</h2>
                     <div class="events">
-                        <div class="event">
-                            <img src="/assets/feat1.jpg" alt="tech talk event">
-                            <div style="display: flex; flex-direction: row;">
-                                <div class="featC" style="width: 75px;">
+                        <article class="event">
+                            <img src="assets/feat1.jpg" alt="tech talk event">
+                            <div class="chips">
+                                <div class="featC">
                                     <p>Featured</p>
                                 </div>
-                                <div class="type" style="width: 50px;">
+                                <div class="type">
                                     <p>Tech</p>
                                 </div>
                             </div>
-                            <h2>Tech Talks 2026</h2>
+                            <h3>Tech Talks 2026</h3>
                             <p><b>Date</b>: 12 Nov 2026, 4:00 PM</p>
                             <p><b>Location</b>: Main Auditorium</p>
                             <p>An evening of short talks from engineers and researchers on AI, chips and space tech.</p>
-                            <a href="/event-details.html" class="viewBut">View Details</a>
-                        </div>
+                            <a href="event-details.html" class="viewBut">View Details</a>
+                        </article>
     
-                        <div class="event">
-                            <img src="/assets/hack1.jpeg" alt="hackathon event">
-                            <div class="type" style="width: 50px; margin-left: 10px;">
+                        <article class="event">
+                            <img src="assets/hack1.jpeg" alt="hackathon event">
+                            <div class="type">
                                 <p>Tech</p>
                             </div>
-                            <h2>24-Hour Hackathon</h2>
-                            <p><b>Date</b>: 20 November 2026, 9:00 AM</p>
+                            <h3>24-Hour Hackathon</h3>
+                            <p><b>Date</b>: 20 Nov 2026, 9:00 AM</p>
                             <p><b>Location</b>: S06 Zone F Academic Building</p>
                             <p>Teams of four build a working prototype in 24 hours. Prizes for the top three.</p>
-                        </div>
+                            <a href="events.html#hackathon" class="viewBut">View Details</a>
+                        </article>
     
-                        <div class="event">
-                            <img src="/assets/robo1.jpeg" alt="robotics workshop event">
-                            <div class="type" style="width: 80px; margin-left: 10px;">
+                        <article class="event">
+                            <img src="assets/robo1.jpeg" alt="robotics workshop event">
+                            <div class="type">
                                 <p>Workshop</p>
                             </div>
-                            <h2>24-Hour Hackathon</h2>
-                            <p><b>Date</b>: 3 December 2026, 1:00 PM</p>
+                            <h3>Robotics & AI Workshop</h3>
+                            <p><b>Date</b>: 3 Dec 2026, 1:00 PM</p>
                             <p><b>Location</b>: S12 Zone D Academic Building</p>
                             <p>Hands-on session building and programming a line-following robot.</p>
-                        </div>
+                            <a href="events.html#robotics-workshop" class="viewBut">View Details</a>
+                        </article>
                     </div>
                 </section>
             </main>
             <footer class="foot">
                 <section id="foot1">
-                    <p class="name">Campus Event Guide</p>
+                    <p class="name">Campus Events Guide</p>
+                    <p class="foot-title">Navigation</p>
                     <ul>
-                        <p style="font-size: 20px;">Navigation</p>
                         <li>
-                            <a href="">Home</a>
+                            <a href="index.html" aria-current="page">Home</a>
                         </li>
                         <li>
                             <a href="events.html">Events</a>
@@ -95,10 +97,24 @@
                             <a href="event-details.html">Featured Event</a>
                         </li>
                     </ul>
-                    <p style="font-size: 13px;">Copyright © 2026</p>
+                    <p class="copyright">Copyright © 2026</p>
                 </section>
                 <section class="foot2">
-                    
+                    <p class="foot-title">Follow us</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Zorro-oreo/SW302-A1" target="_blank" rel="noopener">GitHub repo</a>
+                        </li>
+                    </ul>
                 </section>
             </footer>
         </div>

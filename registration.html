@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="reg.css">
         <title>Registration</title>
     </head>
     <body>
@@ -15,7 +14,7 @@
                 <nav class="nav">
                     <a href="index.html">Home</a>
                     <a href="events.html">Events</a>
-                    <a href="">Registration</a>
+                    <a href="registration.html" aria-current="page">Registration</a>
                     <a href="schedule.html">Schedule</a>
                     <a href="event-details.html">Featured Event</a>
                     <label for="theme-toggle" class="theme-btn">Dark mode</label>
@@ -87,19 +86,16 @@
                                 <input type="file" id="photo" name="photo" accept="image/*">
                             </div>
 
-                            <!-- NEW: color -->
                             <div class="field">
                                 <label for="badge">Name badge colour</label>
                                 <input type="color" id="badge" name="badge" value="#005E8C" class="color-pick">
                             </div>
 
-                            <!-- NEW: range -->
                             <div class="field">
                                 <label for="interest">How interested are you? (1 to 10)</label>
                                 <input type="range" id="interest" name="interest" min="1" max="10" value="5">
                             </div>
 
-                            <!-- NEW: radio -->
                             <div class="field">
                                 <p>Ticket type</p>
                                 <label class="radio-option"><input type="radio" name="ticket" value="student" required checked> Student (free)</label>
@@ -112,26 +108,22 @@
                                         placeholder="Wheelchair access, hearing loop, dietary needs..."></textarea>
                             </div>
                         </fieldset>
-                        <section id="fin">
-                            <input type="checkbox" id="agree">
+                        <div id="fin">
+                            <input type="checkbox" id="agree" name="agree" required>
                             <label for="agree">I agree to the event rules</label>
                             <button id="cl" type="reset">Clear</button>
                             <button id="regb" type="submit">Register</button>
-                        </section>
+                        </div>
                     </form>
                     <aside class="reg-contact">
-                        <h3>Questions?</h3>
+                        <h2>Questions?</h2>
                         <address>
                             Student Activities Office<br>
                             <a href="mailto:events@campusguide.example">events@campusguide.example</a><br>
                             <a href="tel:+20200000000">+20 2 0000 0000</a>
                         </address>
-                        <h3>Before you register</h3>
+                        <h2>Before you register</h2>
                         <p>Bring your student ID. Registration closes 9 Nov.</p>
-                        <h3>Before you register</h3>
-                        <h4>Bring your student ID. <br>
-                            Registration closes 9 Nov.
-                        </h4>
                     </aside>
                 </section>
                 
@@ -139,9 +131,9 @@
             </main>
             <footer class="foot">
                 <section id="foot1">
-                    <p class="name">Campus Event Guide</p>
+                    <p class="name">Campus Events Guide</p>
+                    <p class="foot-title">Navigation</p>
                     <ul>
-                        <p style="font-size: 20px;">Navigation</p>
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -149,7 +141,7 @@
                             <a href="events.html">Events</a>
                         </li>
                         <li>
-                            <a href="">Registration</a>
+                            <a href="registration.html" aria-current="page">Registration</a>
                         </li>
                         <li>
                             <a href="schedule.html">Schedule</a>
@@ -158,10 +150,24 @@
                             <a href="event-details.html">Featured Event</a>
                         </li>
                     </ul>
-                    <p style="font-size: 13px;">Copyright © 2026</p>
+                    <p class="copyright">Copyright © 2026</p>
                 </section>
                 <section class="foot2">
-                    
+                    <p class="foot-title">Follow us</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Zorro-oreo/SW302-A1" target="_blank" rel="noopener">GitHub repo</a>
+                        </li>
+                    </ul>
                 </section>
             </footer>
         </div>

@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="events.css">
         <title>Events</title>
     </head>
     <body>
@@ -14,7 +13,7 @@
                 <p class="name">Campus Events Guide</p>
                 <nav class="nav">
                     <a href="index.html">Home</a>
-                    <a href="">Events</a>
+                    <a href="events.html" aria-current="page">Events</a>
                     <a href="registration.html">Registration</a>
                     <a href="schedule.html">Schedule</a>
                     <a href="event-details.html">Featured Event</a>
@@ -28,127 +27,128 @@
                 </section>
 
                 <section class="events-section">
-                    <h2 style="margin-left: 30px;">Upcoming events</h2>
+                    <h2>Upcoming events</h2>
                     <div class="Events">
-                        <div class="event-l">
+                        <article class="event-l" id="tech-talks">
                             <div class="eve-cont">
-                                <div style="display: flex; flex-direction: row;">
-                                    <div class="featCE" style="width: 75px;">
+                                <div class="chips">
+                                    <div class="featCE">
                                         <p>Featured</p>
                                     </div>
-                                    <div class="typeE" style="width: 50px;">
+                                    <div class="typeE">
                                         <p>Tech</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>Tech Talks 2026</h2>
+                                    <h3>Tech Talks 2026</h3>
                                     <p><b>Date</b>: 12 Nov 2026, 4:00 PM</p>
                                     <p><b>Location</b>: Main Auditorium</p>
                                     <p>An evening of short talks from engineers and researchers on AI, chips and space tech.</p>
                                 </div>
+                                <a href="event-details.html" class="viewBut">View Details</a>
                             </div>
-                            <img src="/assets/feat1.jpg" alt="tech talk event">
-                        </div>
-                        <div class="event-l">
+                            <img src="assets/feat1.jpg" alt="tech talk event">
+                        </article>
+                        <article class="event-l" id="hackathon">
                             <div class="eve-cont">
-                                <div style="display: flex; flex-direction: row;">
-                                    <div class="typeE" style="width: 50px; margin: 0;">
+                                <div class="chips">
+                                    <div class="typeE">
                                         <p>Tech</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>24-Hour Hackathon</h2>
+                                    <h3>24-Hour Hackathon</h3>
                                     <p><b>Date</b>: 20 Nov 2026, 9:00 AM</p>
                                     <p><b>Location</b>: S06 Zone F Academic Building</p>
                                     <p>Teams of four build a working prototype in 24 hours, with prizes for the top three.</p>
                                 </div>
                             </div>
-                            <img src="/assets/hack1.jpeg" alt="Students working on laptops together during a hackathon">
-                        </div>
-                        <div class="event-l">
+                            <img src="assets/hack1.jpeg" alt="Students working on laptops together during a hackathon">
+                        </article>
+                        <article class="event-l" id="career-fair">
                             <div class="eve-cont">
-                                <div style="display: flex; flex-direction: row;">
-                                    <div class="typeE" style="width: 60px; margin: 0;">
+                                <div class="chips">
+                                    <div class="typeE">
                                         <p>Career</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>Autumn Career Fair</h2>
+                                    <h3>Autumn Career Fair</h3>
                                     <p><b>Date</b>: 26 Nov 2026, 10:00 AM</p>
                                     <p><b>Location</b>: Main Courtyard</p>
                                     <p>Meet recruiters from tech and engineering companies, and bring your CV.</p>
                                 </div>
                             </div>
-                            <img src="/assets/career1.png" alt="Students talking to company representatives at recruitment booths">
-                        </div>
-                        <div class="event-l">
+                            <img src="assets/career1.png" alt="Students talking to company representatives at recruitment booths">
+                        </article>
+                        <article class="event-l" id="robotics-workshop">
                             <div class="eve-cont">
-                                <div style="display: flex; flex-direction: row;">
-                                    <div class="typeE" style="width: 75px; margin: 0;">
+                                <div class="chips">
+                                    <div class="typeE">
                                         <p>Workshop</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>Robotics & AI Workshop</h2>
+                                    <h3>Robotics & AI Workshop</h3>
                                     <p><b>Date</b>: 3 Dec 2026, 1:00 PM</p>
                                     <p><b>Location</b>: S12 Zone D Academic Building</p>
                                     <p>A hands-on session building and programming a line-following robot.</p>
                                 </div>
                             </div>
-                            <img src="/assets/robo1.jpeg" alt="Students talking to company representatives at recruitment booths">
-                        </div>
-                        <div class="event-l">
+                            <img src="assets/robo1.jpeg" alt="Students at a robotics and AI workshop">
+                        </article>
+                        <article class="event-l" id="cultural-night">
                             <div class="eve-cont">
-                                <div style="display: flex; flex-direction: row;">
-                                    <div class="typeE" style="width: 60px; margin: 0;">
+                                <div class="chips">
+                                    <div class="typeE">
                                         <p>Culture</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>Cultural Night</h2>
+                                    <h3>Cultural Night</h3>
                                     <p><b>Date</b>: 10 Dec 2026, 6:00 PM</p>
                                     <p><b>Location</b>: Theatre</p>
                                     <p>Music, food and performances from student clubs to close the semester.</p>
                                 </div>
                             </div>
-                            <img src="/assets/music.jpg" alt="Students performing music">
-                        </div>
+                            <img src="assets/music.jpg" alt="Students performing music">
+                        </article>
                     </div>
                 </section>
 
                 <section class="events-section">
-                    <h2 style="margin-left: 30px;">Past events</h2>
+                    <h2>Past events</h2>
                     <div class="Events event-past">
-                        <div class="event-l">
+                        <article class="event-l" id="orientation">
                             <div class="eve-cont">
-                                <div style="display: flex; flex-direction: row;">
-                                    <div class="typeE" style="width: 90px; margin: 0;">
+                                <div class="chips">
+                                    <div class="typeE">
                                         <p>Campus life</p>
                                     </div>
                                 </div>
                                 <div>
-                                    <h2>Orientation Day 2026</h2>
+                                    <h3>Orientation Day 2026</h3>
                                     <p><b>Date</b>: 20 Sep 2026</p>
                                     <p><b>Location</b>: Main Courtyard</p>
                                     <p>Campus tours and club stands to welcome new students.</p>
                                 </div>
                             </div>
-                            <img src="/assets/orient.jpg" alt="Students gathered in a lecture hall">
-                        </div>
+                            <img src="assets/orient.jpg" alt="Students gathered in a lecture hall">
+                        </article>
                     </div>
                     
                 </section>
             </main>
             <footer class="foot">
                 <section id="foot1">
-                    <p class="name">Campus Event Guide</p>
+                    <p class="name">Campus Events Guide</p>
+                    <p class="foot-title">Navigation</p>
                     <ul>
-                        <p style="font-size: 20px;">Navigation</p>
                         <li>
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="">Events</a>
+                            <a href="events.html" aria-current="page">Events</a>
                         </li>
                         <li>
                             <a href="registration.html">Registration</a>
@@ -160,10 +160,24 @@
                             <a href="event-details.html">Featured Event</a>
                         </li>
                     </ul>
-                    <p style="font-size: 13px;">Copyright © 2026</p>
+                    <p class="copyright">Copyright © 2026</p>
                 </section>
                 <section class="foot2">
-                    
+                    <p class="foot-title">Follow us</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Zorro-oreo/SW302-A1" target="_blank" rel="noopener">GitHub repo</a>
+                        </li>
+                    </ul>
                 </section>
             </footer>
         </div>
