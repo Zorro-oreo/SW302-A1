@@ -21,7 +21,96 @@
                 </nav>
             </header>
             <main>
-
+                <div class="banner">
+                    <h1>Tech Talks 2026</h1>
+                    <p><b>Date</b>: 12 Nov 2026, 4:00 PM</p>
+                </div>
+                <section class="details-layout">
+                    <article class="details-main">
+                        <img src="assets/feat1.jpg" alt="Speaker presenting to a full auditorium at Tech Talks" class="details-poster">
+                        <div class="chips">
+                            <div class="featC">
+                                <p>Featured</p>
+                            </div>
+                            <div class="type">
+                                <p>Tech</p>
+                            </div>
+                        </div>
+                        <h2>About the event</h2>
+                        <p>
+                            Tech Talks 2026 is an evening of short talks from engineers and researchers on AI, chips and space tech.
+                            Each speaker has 15 minutes to share what they are working on, followed by a Q&A and a networking session with snacks.
+                        </p>
+                        <h2>Agenda</h2>
+                        <ul class="agenda">
+                            <li><b>4:00 PM</b>: Doors open and welcome</li>
+                            <li><b>4:15 PM</b>: Talk 1, AI in everyday apps</li>
+                            <li><b>4:45 PM</b>: Talk 2, How modern chips are designed</li>
+                            <li><b>5:15 PM</b>: Coffee break</li>
+                            <li><b>5:35 PM</b>: Talk 3, Building small satellites</li>
+                            <li><b>6:05 PM</b>: Open Q&A with all speakers</li>
+                            <li><b>6:30 PM</b>: Networking and closing</li>
+                        </ul>
+                        <h2>Highlights from last year</h2>
+                        <video controls class="details-video">
+                            <source src="assets/video1.mp4" type="video/mp4">
+                        </video>
+                    </article>
+                    <aside class="reg-contact details-info">
+                        <h2>Event info</h2>
+                        <ul class="info-list">
+                            <li><b>Date</b>: 12 Nov 2026</li>
+                            <li><b>Time</b>: 4:00 PM to 7:00 PM</li>
+                            <li><b>Venue</b>: Main Auditorium</li>
+                            <li><b>Entry</b>: Free for students with ID</li>
+                            <li><b>Guests</b>: 50 EGP per ticket</li>
+                            <li><b>Seats</b>: 300, registration required</li>
+                        </ul>
+                        <a href="registration.html" class="viewBut">Register now</a>
+                    </aside>
+                </section>
+                <section class="review">
+                    <h2>Leave a review</h2>
+                    <form class="reg-form review-form">
+                        <fieldset class="reg-group">
+                            <legend>Your review</legend>
+                            <div class="field">
+                                <label for="rev-name">Your name</label>
+                                <input type="text" id="rev-name" name="rev-name" placeholder="Youssef Amgad"
+                                    required maxlength="50" pattern="[A-Za-z ]+"
+                                    title="Letters and spaces only">
+                            </div>
+                            <div class="field">
+                                <label for="rev-email">Email</label>
+                                <input type="email" id="rev-email" name="rev-email" placeholder="you@zewailcity.edu.eg" required>
+                            </div>
+                            <div class="field">
+                                <label for="rating">Rating</label>
+                                <select id="rating" name="rating" required>
+                                    <option value="" disabled selected>Choose a rating</option>
+                                    <option value="5">5 - Excellent</option>
+                                    <option value="4">4 - Good</option>
+                                    <option value="3">3 - Okay</option>
+                                    <option value="2">2 - Poor</option>
+                                    <option value="1">1 - Bad</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="rev-photo">Upload a photo from the event</label>
+                                <input type="file" id="rev-photo" name="rev-photo" accept="image/*">
+                            </div>
+                            <div class="field field-wide">
+                                <label for="comment">Your review</label>
+                                <textarea id="comment" name="comment" rows="4" required minlength="10" maxlength="500"
+                                        placeholder="What did you enjoy? What could be better?"></textarea>
+                            </div>
+                        </fieldset>
+                        <div id="fin">
+                            <button id="cl" type="reset">Clear</button>
+                            <button id="regb" type="submit">Submit review</button>
+                        </div>
+                    </form>
+                </section>
             </main>
             <footer class="foot">
                 <section id="foot1">
