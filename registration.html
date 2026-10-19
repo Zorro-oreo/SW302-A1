@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reg.css">
         <title>Registration</title>
     </head>
     <body>
         <input type="checkbox" id="theme-toggle" class="theme-toggle">
         <div class="page">
             <header class="header">
-                <p class="name">Campus Event Guide</p>
+                <p class="name">Campus Events Guide</p>
                 <nav class="nav">
                     <a href="index.html">Home</a>
                     <a href="events.html">Events</a>
@@ -20,6 +21,149 @@
                     <label for="theme-toggle" class="theme-btn">Dark mode</label>
                 </nav>
             </header>
+            <main>
+                <div class="banner">
+                    <h1>Register for Tech Talks 2026</h1>
+                    <p><b>Date</b>: 12 Nov 2026, 4:00 PM</p>
+                </div>
+                <section class="reg-layout">
+                    <form class="reg-form">
+                        <fieldset class="reg-group">
+                            <legend>Your details</legend>
+                            <div class="field">
+                                <label for="name">Attendee name</label>
+                                <input type="text" id="name" name="name" placeholder="Youssef Amgad"
+                                    required maxlength="50" pattern="[A-Za-z ]+"
+                                    title="Letters and spaces only">
+                            </div>
+                            <div class="field">
+                                <label for="student-id">Student ID</label>
+                                <input type="text" id="student-id" name="student-id" placeholder="202212345"
+                                    required pattern="[0-9]{9}" maxlength="9"
+                                    title="Your 9-digit student ID">
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="you@zewailcity.edu.eg" required>
+                            </div>
+                            <div class="field">
+                                <label for="linkedin">LinkedIn profile</label>
+                                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/...">
+                            </div>
+                        </fieldset>
+                        <fieldset class="reg-group">
+                            <legend>Event preferences</legend>
+                            <div class="field">
+                                <label for="year">Year of study</label>
+                                <select id="year" name="year" required>
+                                    <option value="" disabled selected>Year of study</option>
+                                    <option value="1">Year 1</option>
+                                    <option value="2">Year 2</option>
+                                    <option value="3">Year 3</option>
+                                    <option value="4">Year 4</option>
+                                    <option value="5">Year 5</option>
+                                    <option value="postgrad">Postgraduate</option>
+                                    <option value="alumni">Alumni</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="guests">Number of guests</label>
+                                <input type="number" id="guests" name="guests" min="0" max="3" value="0">
+                            </div>
+                            <div class="field">
+                                <label for="date">Attendance date</label>
+                                <input type="date" id="date" name="date" min="2026-11-12" max="2026-11-12" required>
+                            </div>
+                            <div class="field">
+                                <label for="arrival">Arrival time</label>
+                                <input type="time" id="arrival" name="arrival" min="16:00" max="20:00">
+                            </div>
+                        </fieldset>
+                        <fieldset class="reg-group">
+                            <legend>Extras and accessibility</legend>
+
+                            <div class="field">
+                                <label for="photo">Student ID photo</label>
+                                <input type="file" id="photo" name="photo" accept="image/*">
+                            </div>
+
+                            <!-- NEW: color -->
+                            <div class="field">
+                                <label for="badge">Name badge colour</label>
+                                <input type="color" id="badge" name="badge" value="#005E8C" class="color-pick">
+                            </div>
+
+                            <!-- NEW: range -->
+                            <div class="field">
+                                <label for="interest">How interested are you? (1 to 10)</label>
+                                <input type="range" id="interest" name="interest" min="1" max="10" value="5">
+                            </div>
+
+                            <!-- NEW: radio -->
+                            <div class="field">
+                                <p>Ticket type</p>
+                                <label class="radio-option"><input type="radio" name="ticket" value="student" required checked> Student (free)</label>
+                                <label class="radio-option"><input type="radio" name="ticket" value="guest"> Guest (50 EGP)</label>
+                            </div>
+
+                            <div class="field field-wide">
+                                <label for="needs">Access needs</label>
+                                <textarea id="needs" name="needs" rows="4" maxlength="300"
+                                        placeholder="Wheelchair access, hearing loop, dietary needs..."></textarea>
+                            </div>
+                        </fieldset>
+                        <section id="fin">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">I agree to the event rules</label>
+                            <button id="cl" type="reset">Clear</button>
+                            <button id="regb" type="submit">Register</button>
+                        </section>
+                    </form>
+                    <aside class="reg-contact">
+                        <h3>Questions?</h3>
+                        <address>
+                            Student Activities Office<br>
+                            <a href="mailto:events@campusguide.example">events@campusguide.example</a><br>
+                            <a href="tel:+20200000000">+20 2 0000 0000</a>
+                        </address>
+                        <h3>Before you register</h3>
+                        <p>Bring your student ID. Registration closes 9 Nov.</p>
+                        <h3>Before you register</h3>
+                        <h4>Bring your student ID. <br>
+                            Registration closes 9 Nov.
+                        </h4>
+                    </aside>
+                </section>
+                
+
+            </main>
+            <footer class="foot">
+                <section id="foot1">
+                    <p class="name">Campus Event Guide</p>
+                    <ul>
+                        <p style="font-size: 20px;">Navigation</p>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="events.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="">Registration</a>
+                        </li>
+                        <li>
+                            <a href="schedule.html">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="event-details.html">Featured Event</a>
+                        </li>
+                    </ul>
+                    <p style="font-size: 13px;">Copyright © 2026</p>
+                </section>
+                <section class="foot2">
+                    
+                </section>
+            </footer>
         </div>
     </body>
 </html>
